@@ -345,6 +345,8 @@ html, body {
         /* background-color: blue; */
         display: grid;
         grid-template-columns: 100%;
+        animation: fadeUp 1s ease-out; /* Adjust the duration and timing function as needed */
+        animation-fill-mode: forwards; /* Keeps the final state after the animation completes */
     }
     
     /* IF you want Logo as a background
@@ -356,19 +358,43 @@ html, body {
     } */
 
     .page1 .left .container img{
-        width: 100vw;   
-    }
-
-    .page1 .left h1{
-        font-size: 7vw;
-        padding-bottom: 17vh;
+        width: 100vw;  
+        animation: logoAppear 1s ease-out;
+        animation-fill-mode: forwards;
     }
 
     .ri-arrow-down-wide-fill{
         font-size: 8vw;
+        opacity: 0; /* Set initial opacity to 0 */
+        animation: fadeUp 1s ease-out; /* Adjust the duration and timing function as needed */
+        animation-fill-mode: forwards; /* Keeps the final state after the animation completes */
     }
 
     .page1 .right{
         display: none;
+    }
+  }
+
+
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Adjust the distance you want to move up */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes logoAppear {
+    from {
+      opacity: 0;
+      transform: scale(0.8); /* You can adjust the initial scale as needed */
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
     }
   }
