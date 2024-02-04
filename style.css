@@ -24,6 +24,8 @@ html, body {
     grid-template-columns: 50% 50%;
     justify-content: space-evenly;
     position: relative;
+    animation: fadeUp 1s ease-out; /* Adjust the duration and timing function as needed */
+    animation-fill-mode: forwards; /* Keeps the final state after the animation completes */
 }
 
 .page1 .left{
@@ -46,6 +48,9 @@ html, body {
     position: absolute;
     top: 90%;
     left: 45%;
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeUp 1s ease-out; /* Adjust the duration and timing function as needed */
+    animation-fill-mode: forwards; /* Keeps the final state after the animation completes */    
 }
 .page1 .left .container img{
     width: 40vw;    
@@ -345,8 +350,6 @@ html, body {
         /* background-color: blue; */
         display: grid;
         grid-template-columns: 100%;
-        animation: fadeUp 1s ease-out; /* Adjust the duration and timing function as needed */
-        animation-fill-mode: forwards; /* Keeps the final state after the animation completes */
     }
     
     /* IF you want Logo as a background
@@ -365,9 +368,6 @@ html, body {
 
     .ri-arrow-down-wide-fill{
         font-size: 8vw;
-        opacity: 0; /* Set initial opacity to 0 */
-        animation: fadeUp 1s ease-out; /* Adjust the duration and timing function as needed */
-        animation-fill-mode: forwards; /* Keeps the final state after the animation completes */
     }
 
     .page1 .right{
