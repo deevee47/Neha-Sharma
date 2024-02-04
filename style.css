@@ -49,11 +49,13 @@ html, body {
     top: 90%;
     left: 45%;
     opacity: 0; /* Set initial opacity to 0 */
-    animation: fadeUp 1s ease-out; /* Adjust the duration and timing function as needed */
-    animation-fill-mode: forwards; /* Keeps the final state after the animation completes */    
+    animation: logoAppear 1s ease-out;
+    animation-fill-mode: forwards;   /* Keeps the final state after the animation completes */    
 }
 .page1 .left .container img{
     width: 40vw;    
+    animation: logoAppear 1s ease-out;
+    animation-fill-mode: forwards;
 }
 
 .page1 .left h1{
@@ -62,6 +64,8 @@ html, body {
     font-size: 4vw;
     color: #5D0E45;
 }
+
+
 .page1 .right{
     /* background-color: red; */
     height: 100%;
@@ -342,11 +346,9 @@ html, body {
 }   
 
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     /* Styles for screens with a maximum width of 600px */
-    .page1{
-        width: 100%;
-        height: 100%; 
+    .page1{ 
         /* background-color: blue; */
         display: grid;
         grid-template-columns: 100%;
@@ -362,8 +364,6 @@ html, body {
 
     .page1 .left .container img{
         width: 100vw;  
-        animation: logoAppear 1s ease-out;
-        animation-fill-mode: forwards;
     }
 
     .ri-arrow-down-wide-fill{
@@ -373,7 +373,96 @@ html, body {
     .page1 .right{
         display: none;
     }
-  }
+
+    /* PAGE 2   */
+
+
+    .page2{
+        background-image: url(bgLogo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position: 50% 60%; */
+        border-radius: 0px;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-evenly;
+        padding: 8vh;
+    }
+
+    .page2 .left {
+        text-align: center;
+    }
+    
+    .page2 .left img{
+        object-fit: cover;
+        width: 45vw;
+        margin-bottom: 2vh;
+        animation: fadeUp 1s ease-out; /* Adjust the duration and timing function as needed */
+        animation-fill-mode: forwards; /* Keeps the final state after the animation completes */
+    }
+    
+    .page2 .left h2{
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 3vw;
+        text-align: left;
+        animation: fadeLeft 1s ease-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .page2 .left h1{
+        font-family: Metanoia;
+        font-size: 15vw;
+        text-align: left;
+        /* font-weight: 200; */
+        color: white;
+        margin-top: 1.5vh;
+        line-height: 8vh;
+        animation: fadeLeft 1s ease-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .neha-photo{
+        height: 40vw;
+        width: 50vw;
+        object-fit: cover;
+        object-position: 50% 15%;
+        border-radius: 120px 120px 0px 0px;
+        animation: fadeUp 1s ease-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .exp {
+        margin-top: 8vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center; 
+        /* background-color: red; */
+    }   
+    
+    .exp h6{
+        font-family: Poppins;
+        text-align: center;
+        /* color: #5D0E45; */
+        color: white;
+        font-weight: 400;
+        font-size: 3vw;
+        padding-top: 2vh;
+        animation: logoAppear 1s ease-out;
+        animation-fill-mode: forwards;
+    }
+   
+    
+
+
+
+    .page3, .bachpan, .thecuspstory {
+        display: none;
+    }
+
+}
+
+
 
 
 
@@ -396,5 +485,16 @@ html, body {
     to {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  @keyframes fadeLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px); /* Adjust the distance you want to move left */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
