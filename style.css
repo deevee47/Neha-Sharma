@@ -21,8 +21,9 @@ html, body {
     height: 100%;
     /* background-color: blue; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .page1 .left{
@@ -32,7 +33,24 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
+
+.page1 .left .container{
+    text-align: center;
+
+}
+
+.ri-arrow-down-wide-fill{
+    font-size: 2vw;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+}
+.page1 .left .container img{
+    width: 40vw;    
+}
+
 .page1 .left h1{
     font-family: Metanoia;
     padding-left: 2vw;
@@ -48,10 +66,6 @@ html, body {
     justify-content: center;
 }
 
-.page1 .left img {
-    width: 40vw;
-    font-weight: 800;
-}
 .page1 .right img {
     height: 32vw;
     width: 30vw;
@@ -321,3 +335,40 @@ html, body {
     height: 28vh;
     width: 42vh; 
 }   
+
+
+@media screen and (max-width: 600px) {
+    /* Styles for screens with a maximum width of 600px */
+    .page1{
+        width: 100%;
+        height: 100%; 
+        /* background-color: blue; */
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    /* IF you want Logo as a background
+    .page1 .left{
+         background: url(bgLogo.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+    } */
+
+    .page1 .left .container img{
+        width: 100vw;   
+    }
+
+    .page1 .left h1{
+        font-size: 7vw;
+        padding-bottom: 17vh;
+    }
+
+    .ri-arrow-down-wide-fill{
+        font-size: 8vw;
+    }
+
+    .page1 .right{
+        display: none;
+    }
+  }
