@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "work sans";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #f3e6e1;
+}
+
+.page1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.page1 .left{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page1 .left h1{
+    font-family: Metanoia;
+    padding-left: 2vw;
+    font-size: 4vw;
+    color: #5D0E45;
+}
+.page1 .right{
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page1 .left img {
+    width: 40vw;
+    font-weight: 800;
+}
+.page1 .right img {
+    width: 35vw;
+    object-fit: cover;
+
+}
+
+/* PAGE TWO */
+
+.page2{
+    height: 100%;
+    width: 100%;
+    background-image: url(main_logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    padding-top: 10vh;
+    padding-left: 10vh;
+}
+
+.page2 .left img{
+    object-fit: cover;
+    width: 30vw;
+}
+
+.page2 .left h2{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 3vw;
+}
+
+.page2 .left h1{
+    font-family: Metanoia;
+    font-size: 5vw;
+    /* font-family: 200; */
+    color: white;
+    margin-top: 1.5vh;
+    line-height: 13vh;
+}
+
+.neha-photo{
+    height: 18vw;
+    width: 30vw;
+    object-fit: cover;
+    object-position: 50% 15%;
+    border-radius: 120px 120px 0px 0px;
+}
+
+.exp {
+    margin-top: 7vh;
+    width: 35vw;
+    object-fit: cover;
+    text-align: center;
+}   
+
+.exp h6{
+    font-family: Poppins;
+    text-align: center;
+    /* color: #5D0E45; */
+    color: white;
+    font-weight: 400;
+    font-size: 1.2vw;
+    padding-top: 2vh;
+}
+
+
+/* PAGE 3 */
+
+.page3{
+    height: 100%;
+    width: 100%;
+    /* background-position: 50% 60%; */
+    /* border-radius: 20px; */
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 10vh 10vh 10vh 10vh;
+    /* background-color: aqua; */
+}
+
+.page3 .left {
+    background-image: url(orange_waves.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.page3 .left h1{
+    padding: 2vw;
+    text-align: center;
+    font-size: 5vw;
+    font-family: Metanoia;
+    color: #5D0E45;
+}
+
+.page3 .left h6{
+    padding: 2vw;
+    font-size: 1.5vw;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #161033;
+
+}
+
+.collage-container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw;
+    grid-template-rows: 10vw 10vw 10vw 10vw;
+}
+
+.collage-container img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+
+
+.bachpan{
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    /* background-position: 50% 60%; */
+    /* border-radius: 20px; */
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 10vh 10vh 10vh 10vh;
+}
+
+
+.bachpan .left {
+    
+    background-image: url(purpleWaves.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    /* align-items: center; */
+    text-align: center;
+}
+
+
+.bachpan .left h1{
+    padding: 2vw;
+    text-align: center;
+    font-size: 2.4vw;
+    font-family: Metanoia;
+    color: #5D0E45;
+    text-align: left;
+}
+
+.bachpan .left img{
+    object-fit: cover; 
+    width: 70%;
+}
+.bachpan .left h6{
+    text-align: left;
+    padding: 2vw;
+    font-size: 1.4vw;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #161033;
+
+}
+.bachpan .right{
+    text-align: right;
+}
+
+.bachpan .right img {
+    border: 7px solid #C01B63;
+    border-radius: 4px;
+    object-fit: cover; 
+}
+
+.b3{
+    height: 29vh;
+    width: 52.5vh;
+}
+
+.b2{
+    height: 29vh;
+    width: 72.5vh;
+}
+
+.b1{
+    height: 29vh;
+    width: 52.5vh; 
+}
+
+
+.thecuspstory{
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    /* background-position: 50% 60%; */
+    /* border-radius: 20px; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10vh 10vh 10vh 10vh;
+}
+
+
+.thecuspstory .left {
+    
+    background-image: url(yellowWaves.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    /* align-items: center; */
+    text-align: center;
+}
+
+
+.thecuspstory .left h1{
+    padding: 2vw;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: Metanoia;
+    color: #5D0E45;
+    text-align: left;
+}
+
+.thecuspstory .left img{
+    object-fit: cover; 
+    width: 47%;
+    border: 7px solid black
+}
+.thecuspstory .left h6{
+    text-align: left;
+    padding: 2vw;
+    font-size: 1.4vw;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #161033;
+
+}
+.thecuspstory .right{
+    text-align: right; 
+}
+
+
+.thecuspstory div{
+    margin-bottom: 1vh;
+}
+.thecuspstory .right img {
+    border: 7px solid #FFCE04;
+    border-radius: 4px;
+    object-fit: cover; 
+}
+
+.c3{
+    height: 26vh;
+    width: 26vh;
+}
+
+.c2{
+    height: 28vh;
+    width: 42vh;
+}
+
+.c1{
+    height: 28vh;
+    width: 42vh; 
+}   
