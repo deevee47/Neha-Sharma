@@ -386,7 +386,7 @@ html, body {
         display: grid;
         grid-template-columns: 100%;
         justify-content: space-evenly;
-        padding: 8vh;
+        padding: 4vh;
     }
 
     .page2 .left {
@@ -395,27 +395,22 @@ html, body {
     
     .page2 .left img{
         object-fit: cover;
-        width: 45vw;
+        width: 40vw;
         margin-bottom: 2vh;
         animation: fadeUp 1s ease-out; /* Adjust the duration and timing function as needed */
         animation-fill-mode: forwards; /* Keeps the final state after the animation completes */
     }
     
     .page2 .left h2{
-        font-family: Poppins;
-        font-weight: 400;
-        font-size: 3vw;
         text-align: left;
         animation: fadeLeft 1s ease-out;
         animation-fill-mode: forwards;
     }
     
     .page2 .left h1{
-        font-family: Metanoia;
         font-size: 15vw;
         text-align: left;
         /* font-weight: 200; */
-        color: white;
         margin-top: 1.5vh;
         line-height: 8vh;
         animation: fadeLeft 1s ease-out;
@@ -424,16 +419,16 @@ html, body {
     
     .neha-photo{
         height: 40vw;
-        width: 50vw;
+        width: 60vw;
         object-fit: cover;
         object-position: 50% 15%;
-        border-radius: 120px 120px 0px 0px;
+        border-radius: 10px;
         animation: fadeUp 1s ease-out;
         animation-fill-mode: forwards;
     }
     
     .exp {
-        margin-top: 8vh;
+        margin-top: -2vh;
         width: 100%;
         object-fit: cover;
         text-align: center; 
