@@ -86,6 +86,7 @@ html, body {
 
 /* PAGE TWO */
 
+
 .page2{
     height: 100%;
     width: 100%;
@@ -97,9 +98,19 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
-    padding-top: 10vh;
-    padding-left: 10vh;
+    padding: 10vh;
 }
+
+ /* .page2 .left{
+    background-color: red;
+} */
+
+.page2 .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+} 
 
 .page2 .left img{
     object-fit: cover;
@@ -130,7 +141,6 @@ html, body {
 }
 
 .exp {
-    margin-top: 7vh;
     width: 35vw;
     object-fit: cover;
     text-align: center;
